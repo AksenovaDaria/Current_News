@@ -1,0 +1,29 @@
+.header{
+    background-color: blueviolet;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    justify-content: space-between;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+h1{
+    font-size: 24px;
+    font-weight: bold;
+    grid-column: 1;
+    margin-right: auto;
+    margin-left: 0;
+}
+
+
+@media (max-width: 650px) {
+   .header{ 
+    padding: 5px 10px;
+    display: flex;
+}
+h1{
+    font-size: 18px;
+}
+
+
+}
