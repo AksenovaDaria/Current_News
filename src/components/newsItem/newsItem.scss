@@ -1,0 +1,32 @@
+.title{
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.date{
+    text-align: right;
+}
+
+@media (min-width: 650px) {
+    .forflex {
+        margin:auto;
+        
+        display: grid;
+        grid-template-columns: 40% 60%;
+
+        img {
+            grid-column: 1;
+            width: 100%;
+            }
+
+        .text {
+            grid-column: 2;
+            text-align: justify;
+            padding-left: 10px;
+                        }
+    }
+
+    
+
+
+}
