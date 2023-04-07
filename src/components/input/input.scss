@@ -1,0 +1,53 @@
+.container_form{
+    width: 100%;
+    grid-column: 2;
+    display: flex;
+
+    .label {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+    .input_class {
+            border: 0.2px solid rgb(129, 127, 127);
+            padding: 5px;
+            border-radius: 20% 0 0 20%;
+            text-align: center;
+            ursor: text;
+        }
+
+    .subinput{
+            background-color: white;
+            border: 0.2px solid rgb(129, 127, 127);
+            padding: 5px;
+            border-radius: 0 20% 20% 0;
+            cursor: pointer;
+}
+
+
+}
+
+
+
+@media (max-width: 650px) {
+    .container_form {
+            width: 200px;
+        grid-column: 2;
+            display: flex;
+
+            .input_class {
+                    width: 70px;
+                    font-size: 12px;
+                }
+
+            .subinput{
+                    width: 50px;
+                    font-size: 12px;
+                    
+            }
+        }
+
+       
+}
+
+
