@@ -14,17 +14,11 @@ import Menu from "../menu/menu";
 
 const Main = (news) => {
   const [dataArray, setDataArray] = useState("yy");
-  const [text, setText] = useState("");
   const [func, setFunc] = useState("");
   const [showButton, setShowButton] = useState(false);
-  const [back, setBack] = useState("");
 
   function changeDataArray(newData) {
     setDataArray(newData);
-  }
-
-  function changeText(newText) {
-    setText(newText);
   }
 
   function changeFunc(newPage) {
@@ -33,10 +27,6 @@ const Main = (news) => {
 
   function changeShowButton(value) {
     setShowButton(value);
-  }
-
-  function changeBack(value) {
-    setBack(value);
   }
 
   const getDate = (page) => requestAll(page);
@@ -113,7 +103,6 @@ const Main = (news) => {
   });
 
   const handleClick = (item) => {
-    changeText(item);
     dispatch(actionChangeAll(1, "getSector", item, 1));
     changeShowButton(false);
   };
