@@ -16,7 +16,8 @@ root.render(
       <Provider Provider store={store}>
         <App>
           <Routes>
-            <Route exact path="/news" element={<Main />} />
+            <Route exact path="/" element={<Main />} />
+            <Route path="/news" element={<Main />} />
             <Route path="/news/page/:id" element={<Main />} />
             <Route path="/news/search" element={<Main />} />
             <Route path="/news/:id" element={<News />} />
