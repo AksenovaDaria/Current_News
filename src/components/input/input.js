@@ -20,6 +20,7 @@ const Input = (props) => {
     dispatch(actionChangeAll(1, "keyWord", text, 1));
     changeValue("");
     e.preventDefault();
+   
   }
 
   function onChange(event) {
@@ -30,7 +31,7 @@ const Input = (props) => {
   return (
     <form className="container_form" onSubmit={changeAllinReduxStore}>
       <label className="label">
-        <Link className="link" to={`/news/search`}>
+        <Link className="link" >
           <input
             className="input_class"
             type="text"
@@ -43,6 +44,23 @@ const Input = (props) => {
       <input className="subinput" type="submit" value="Search" />
     </form>
   );
+
+  // return (
+  //   <form className="container_form" onSubmit={changeAllinReduxStore}>
+  //     <label className="label">
+  //       <Link className="link" >
+  //         <input
+  //           className="input_class"
+  //           type="text"
+  //           placeholder="Search"
+  //           value={value}
+  //           onChange={onChange}
+  //         />
+  //       </Link>
+  //     </label>
+  //     <input className="subinput" type="submit" value="Search" />
+  //   </form>
+  // );
 };
 
 export default connect(
